@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1351958462 source:c:\cygwin\home\artur\github\cppreference\algorithms\algo.cpp
+	"algo.h"
+	<iostream>
+	<limits>
+
+1351961137 c:\cygwin\home\artur\github\cppreference\algorithms\algo.h
+
+1351960921 source:c:\cygwin\home\artur\github\cppreference\algorithms\sort\selection.cpp
+	<iostream>
+	<limits>
+	<utility>
+	"../algo.h"
+

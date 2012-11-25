@@ -5,7 +5,7 @@
 using namespace std;
 
 template <typename T>
-Algo<T>::Algo(const T* numbers, const int count)
+Algo<T>::Algo(T const* numbers, int count)
 {
     this->numbers = numbers;
 }
