@@ -32,6 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Algorithms\algo.cpp" />
+		<Unit filename="Algorithms\algo.h" />
+		<Unit filename="Algorithms\sort\selection.cpp" />
+		<Unit filename="Algorithms\sort\selection.h" />
+		<Unit filename="Utility.cpp" />
+		<Unit filename="Utility.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
