@@ -8,18 +8,24 @@
 
 using namespace std;
 
-SelectionSort::SelectionSort(const int* numbers, int count)
+template <typename T>
+SelectionSort<T>::SelectionSort(const T* numbers, int count)
     :numbers(numbers),
      count(count)
 {
 
 }
 
-int* SelectionSort::Sort()
+template <typename T>
+SelectionSort<T>::SelectionSort()
+{}
+
+template <typename T>
+T* SelectionSort<T>::Sort()
 {
     Utility utility;
 
-    int* sorted = new int[count];
+    T* sorted = new T[count];
     for (int i = 0; i<count; i++)
     {
       sorted[i] = numbers[i];
@@ -28,7 +34,7 @@ int* SelectionSort::Sort()
     for (int i = 0; i<count; i++)
     {
         int minindex = utility.findMin(sorted, count, i, count);
-        int temp = sorted[i];
+        T temp = sorted[i];
         sorted[i] = sorted[minindex];
         sorted[minindex] = temp;
 

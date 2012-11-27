@@ -1,13 +1,15 @@
 #ifndef SELECTION_H_INCLUDED
 #define SELECTION_H_INCLUDED
 
+template <typename T>
 class SelectionSort
 {
-    const int* numbers;
+    const T* numbers;
     int count;
 public:
-    SelectionSort(const int* numbers, int count);
-    int* Sort();
+    SelectionSort();
+    SelectionSort(const T* numbers, int count);
+    T* Sort();
 };
 
 
