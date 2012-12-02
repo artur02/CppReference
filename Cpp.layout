@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Algorithms\sort\selection.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="639" topLine="3" />
+	<File name="Algorithms\sort\selection.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="314" topLine="6" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="124" topLine="0" />
+	<File name="Algorithms\sort\selection.h" open="1" top="1" tabpos="2">
+		<Cursor position="106" topLine="0" />
+	</File>
+	<File name="Utility.h" open="0" top="0" tabpos="0">
+		<Cursor position="231" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1232" topLine="45" />
 	</File>
 </CodeBlocks_layout_file>

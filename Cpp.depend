@@ -28,14 +28,20 @@
 	<iostream>
 	<limits>
 
-1354050691 source:c:\source\cppreference\main.cpp
+1354451363 source:c:\source\cppreference\main.cpp
 	<iostream>
 	"Utility.h"
 	"Algorithms\sort\selection.h"
 
-1353858913 c:\source\cppreference\utility.h
+1354451719 c:\source\cppreference\utility.h
 
-1354050642 c:\source\cppreference\algorithms\sort\selection.h
+1354451735 c:\source\cppreference\algorithms\sort\selection.h
+	<iostream>
+	<limits>
+	<utility>
+	"../algo.h"
+	"selection.h"
+	"../../Utility.h"
 
 1354050675 source:c:\source\cppreference\algorithms\sort\selection.cpp
 	<iostream>
@@ -45,14 +51,16 @@
 	"selection.h"
 	"../../Utility.h"
 
-1353856210 c:\source\cppreference\algorithms\algo.h
+1354451333 c:\source\cppreference\algorithms\algo.h
+	<iostream>
+	<limits>
 
 1353856239 source:c:\source\cppreference\algorithms\algo.cpp
 	"algo.h"
 	<iostream>
 	<limits>
 
-1353858999 source:c:\source\cppreference\utility.cpp
+1354451709 source:c:\source\cppreference\utility.cpp
 	"Utility.h"
 	<iostream>
 	<limits>

@@ -17,7 +17,7 @@ void Utility::dump(const int* nums, const int count)
     }
 }
 
-int Utility::findMin(const int* nums, const int count, const int start, int end)
+int Utility::findMin(const int* nums, int start, int end)
 {
     int min = numeric_limits<int>::max();
     int min_index = -1;
