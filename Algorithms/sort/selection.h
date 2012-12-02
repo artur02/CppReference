@@ -2,11 +2,12 @@
 #define SELECTION_H_INCLUDED
 
 #include <iostream>
+#include <iomanip>
 #include <limits>
 #include <utility>
 
 #include "../algo.h"
-#include "selection.h"
+#include "../../Utility.h"
 #include "../../Utility.h"
 
 template <typename T>
@@ -42,6 +43,7 @@ T* SelectionSort<T>::Sort()
     {
         int minindex = utility.findMin(sorted, i, count);
         T temp = sorted[i];
+        std::cout << std::setw(2) << temp << ": ";
         sorted[i] = sorted[minindex];
         sorted[minindex] = temp;
 
