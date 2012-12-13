@@ -8,50 +8,39 @@
 
 #include "../algo.h"
 #include "../../Utility.h"
-#include "../../Utility.h"
 
 template <typename T>
 class SelectionSort
+    : Algo<T>
 {
-    const T* numbers;
-    int count;
 public:
-    SelectionSort(const T* numbers, int count);
-    T* Sort();
+    SelectionSort(T* numbers, int count);
+    virtual T* Sort();
 };
 
 
 
 template <typename T>
-SelectionSort<T>::SelectionSort(const T* numbers, int count)
-    :numbers(numbers),
-    count(count)
+SelectionSort<T>::SelectionSort(T* numbers, int count)
+    : Algo<T>::Algo(numbers, count)
 {}
 
 template <typename T>
 T* SelectionSort<T>::Sort()
 {
-    Utility utility;
-
-    T* sorted = new T[count];
-    for (int i = 0; i<count; i++)
+    for (int i = 0; i<Algo<T>::count; i++)
     {
-        sorted[i] = numbers[i];
-    }
-
-    for (int i = 0; i<count; i++)
-    {
-        int minindex = utility.findMin(sorted, i, count);
-        T temp = sorted[i];
+        int minindex = this->FindMin(i, Algo<T>::count);
+        T temp = Algo<T>::numbers[i];
         std::cout << std::setw(2) << temp << ": ";
-        sorted[i] = sorted[minindex];
-        sorted[minindex] = temp;
+        Algo<T>::numbers[i] = Algo<T>::numbers[minindex];
+        Algo<T>::numbers[minindex] = temp;
 
-        utility.dump(sorted, count);
+        this->Dump();
         std::cout << std::endl;
     }
 
-    return sorted;
+    return Algo<T>::numbers;
 }
 
 

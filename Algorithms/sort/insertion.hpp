@@ -7,43 +7,42 @@
 
 template <typename T>
 class InsertionSort
+    : Algo<T>
 {
-    T* numbers;
-    int count;
+
 public:
     InsertionSort(T* numbers, int count);
-    T* Sort();
+    virtual T* Sort();
 };
 
 template <typename T>
 InsertionSort<T>::InsertionSort(T* numbers, int count)
-    :numbers(numbers),
-    count(count)
+    : Algo<T>::Algo(numbers, count)
 { }
 
 template <typename T>
-T* InsertionSort<T>::Sort()
+ T* InsertionSort<T>::Sort()
 {
     Utility utility;
 
-    for (int i=1; i<count-1; i++)
+    for (int i=1; i< Algo<T>::count-1; i++)
     {
-        T item = numbers[i];
+        T item = Algo<T>::numbers[i];
         std::cout << std::setw(2) << item << ": ";
         int hole = i;
-        while(hole > 0 && numbers[hole-1] > item)
+        while(hole > 0 && Algo<T>::numbers[hole-1] > item)
         {
-            numbers[hole] = numbers[hole-1];
+            Algo<T>::numbers[hole] = Algo<T>::numbers[hole-1];
             hole--;
         }
 
-        numbers[hole] =  item;
+        Algo<T>::numbers[hole] =  item;
 
-        utility.dump(numbers, count);
+        Algo<T>::Dump();
         std::cout << std::endl;
     }
 
-    return numbers;
+    return Algo<T>::numbers;
 }
 
 #endif // INSERTION_HPP_INCLUDED

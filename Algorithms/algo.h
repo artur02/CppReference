@@ -1,47 +1,54 @@
 #include <iostream>
 #include <limits>
+#include "Utility.h"
 
 template <typename T>
 class Algo
 {
-    const T* numbers;
+
 protected:
-    void DumpArray(const T* numbers, const int count);
-    int FindMin(const T* numbers, const int count, int start, int end);
+    T* numbers;
+    int count;
+    void Dump();
+    int FindMin(int start, int end);
 public:
-    Algo(const T* numbers, int count);
+    Algo(T* numbers, int count);
+    virtual ~Algo();
     virtual T* Sort() = 0;
 };
 
 template <typename T>
-Algo<T>::Algo(T const* numbers, int count)
-{
-    this->numbers = numbers;
-}
+Algo<T>::Algo(T* numbers, int count)
+    :numbers(numbers),
+    count(count)
+{ }
 
 template <typename T>
-void Algo<T>::DumpArray(const T* numbers, const int count)
+void Algo<T>::Dump()
 {
     for (int i=0; i<count; i++)
     {
-        std::cout << numbers[i] << " " << std::endl;
+        std::cerr << numbers[i] << " ";
     }
 }
 
 template <typename T>
-int Algo<T>::FindMin(const T* numbers, const int count, int start, int end)
+int Algo<T>::FindMin(int start, int end)
 {
-    int index = -1;
-    int minvalue = std::numeric_limits<T>::max();
+    int min_index = -1;
 
-    for (int i=start; i<=end; i++)
+    for(int i = start; i<end; i++)
     {
-        if(numbers[i]<minvalue)
+        if(numbers[i]<numbers[min_index])
         {
-            index = i;
+            min_index = i;
         }
     }
 
-    return index;
+    return min_index;
+}
+
+template <typename T>
+Algo<T>::~Algo(){
 }
 
