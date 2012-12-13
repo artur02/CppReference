@@ -12,9 +12,9 @@ void RunSelectionSort(int* numbers, int count)
 
     cout << "=== Selection sort ===" << endl;
     SelectionSort<int> sorter(numbers, count);
-    int* sorted = sorter.Sort();
+    sorter.Sort();
     cout << "Sorted numbers:" << endl;
-    utility.dump(sorted, count);
+    sorter.Dump();
 }
 
 void RunInsertionSort(int* numbers, int count)
@@ -23,9 +23,9 @@ void RunInsertionSort(int* numbers, int count)
 
     cout << "=== Insertion sort ===" << endl;
     InsertionSort<int> ins(numbers, count);
-    int* inssorted = ins.Sort();
+    ins.Sort();
     cout << "Sorted numbers:" << endl;
-    utility.dump(inssorted, count);
+    ins.Dump();
 }
 
 int main()

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <limits>
 #include "Utility.h"
 
@@ -9,12 +10,12 @@ class Algo
 protected:
     T* numbers;
     int count;
-    void Dump();
     int FindMin(int start, int end);
 public:
     Algo(T* numbers, int count);
     virtual ~Algo();
     virtual T* Sort() = 0;
+    virtual void Dump();
 };
 
 template <typename T>
@@ -28,7 +29,7 @@ void Algo<T>::Dump()
 {
     for (int i=0; i<count; i++)
     {
-        std::cerr << numbers[i] << " ";
+        std::cerr << std::setw(2) << numbers[i] << " ";
     }
 }
 

@@ -11,7 +11,7 @@
 
 template <typename T>
 class SelectionSort
-    : Algo<T>
+    : public Algo<T>
 {
 public:
     SelectionSort(T* numbers, int count);
@@ -28,19 +28,19 @@ SelectionSort<T>::SelectionSort(T* numbers, int count)
 template <typename T>
 T* SelectionSort<T>::Sort()
 {
-    for (int i = 0; i<Algo<T>::count; i++)
+    for (int i = 0; i < this->count; i++)
     {
-        int minindex = this->FindMin(i, Algo<T>::count);
-        T temp = Algo<T>::numbers[i];
+        int minindex = this->FindMin(i, this->count);
+        T temp = this->numbers[i];
         std::cout << std::setw(2) << temp << ": ";
-        Algo<T>::numbers[i] = Algo<T>::numbers[minindex];
-        Algo<T>::numbers[minindex] = temp;
+        this->numbers[i] = this->numbers[minindex];
+        this->numbers[minindex] = temp;
 
         this->Dump();
         std::cout << std::endl;
     }
 
-    return Algo<T>::numbers;
+    return this->numbers;
 }
 
 
