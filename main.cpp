@@ -6,6 +6,28 @@
 
 using namespace std;
 
+void RunSelectionSort(int* numbers, int count)
+{
+    Utility utility;
+
+    cout << "=== Selection sort ===" << endl;
+    SelectionSort<int> sorter(numbers, count);
+    int* sorted = sorter.Sort();
+    cout << "Sorted numbers:" << endl;
+    utility.dump(sorted, count);
+}
+
+void RunInsertionSort(int* numbers, int count)
+{
+    Utility utility;
+
+    cout << "=== Insertion sort ===" << endl;
+    InsertionSort<int> ins(numbers, count);
+    int* inssorted = ins.Sort();
+    cout << "Sorted numbers:" << endl;
+    utility.dump(inssorted, count);
+}
+
 int main()
 {
     Utility utility;
@@ -17,24 +39,10 @@ int main()
     utility.dump(numbers, num_count);
 
     cout << endl << endl;
-
-
-    cout << "=== Selection sort ===" << endl;
-    SelectionSort<int> sorter(numbers, num_count);
-    int* sorted = sorter.Sort();
-    cout << "Sorted numbers:" << endl;
-    utility.dump(sorted, num_count);
+    RunSelectionSort(numbers, num_count);
 
     cout << endl << endl;
-
-    cout << "=== Insertion sort ===" << endl;
-    InsertionSort<int> ins(numbers, num_count);
-    int* inssorted = ins.Sort();
-    cout << "Sorted numbers:" << endl;
-    utility.dump(inssorted, num_count);
-
-
-
+    RunInsertionSort(numbers, num_count);
 
     return 0;
 }
