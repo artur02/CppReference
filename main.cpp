@@ -7,11 +7,23 @@
 
 using namespace std;
 
-int* GetNumbers(int* count)
+int* FillArray(int* array, int* count)
 {
-    static int original[] = {1, 3, 2, 11, 6, 6, 9, 8, -5, 89};
-    *count = sizeof(original)/sizeof(int);
-    return original;
+    //array = {1, 3, 2, 11, 6, 6, 9, 8, -5, 89};
+    array[0] = 1;
+    array[1] = 3;
+    array[2] = 4;
+    array[3] = 11;
+    array[4] = 6;
+    array[5] = 6;
+    array[6] = 9;
+    array[7] = 8;
+    array[8] = -5;
+    array[9] = 89;
+
+    *count = 10;
+
+    return array;
 }
 
 void RunSelectionSort(int* numbers, int count)
@@ -52,23 +64,23 @@ int main()
     Utility utility;
 
     int num_count;
-    int* numbers = GetNumbers(&num_count);
+    int numbers[10];
+    FillArray(numbers, &num_count);
 
 
     cout << "Original numbers:" << endl;
     utility.dump(numbers, num_count);
 
     cout << endl << endl;
-    delete numbers;
-    numbers = GetNumbers(&num_count);
+    FillArray(numbers, &num_count);
     RunSelectionSort(numbers, num_count);
 
     cout << endl << endl;
-    numbers = GetNumbers(&num_count);
+    FillArray(numbers, &num_count);
     RunInsertionSort(numbers, num_count);
 
     cout << endl << endl;
-    numbers = GetNumbers(&num_count);
+    FillArray(numbers, &num_count);
     RunBubbleSort(numbers, num_count);
 
     return 0;

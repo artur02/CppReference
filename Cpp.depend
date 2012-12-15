@@ -28,7 +28,7 @@
 	<iostream>
 	<limits>
 
-1355577493 source:c:\source\cppreference\main.cpp
+1355600310 source:c:\source\cppreference\main.cpp
 	<iostream>
 	"Utility.h"
 	"Algorithms\sort\selection.h"
@@ -77,7 +77,7 @@
 
 1354451719 c:\source\cppreference\\utility.h
 
-1355415162 c:\source\cppreference\algorithms\sort\bubble.h
+1355600508 c:\source\cppreference\algorithms\sort\bubble.h
 	<iostream>
 	<iomanip>
 	"../../Utility.h"
