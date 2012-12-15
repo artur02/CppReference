@@ -28,6 +28,7 @@ T* BubbleSort<T>::Sort()
     int n = this->count;
     bool swapped = false;
     do {
+        swapped = false;
         for (int i=1; i<n; i++)
         {
             if (this->numbers[i-1] > this->numbers[i])
