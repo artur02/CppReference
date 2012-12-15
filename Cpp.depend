@@ -28,10 +28,11 @@
 	<iostream>
 	<limits>
 
-1355408582 source:c:\source\cppreference\main.cpp
+1355577493 source:c:\source\cppreference\main.cpp
 	<iostream>
 	"Utility.h"
 	"Algorithms\sort\selection.h"
+	"Algorithms\sort\bubble.h"
 	"Algorithms\sort\insertion.hpp"
 	<time.h>
 
@@ -53,7 +54,7 @@
 	"selection.h"
 	"../../Utility.h"
 
-1355408697 c:\source\cppreference\algorithms\algo.h
+1355577996 c:\source\cppreference\algorithms\algo.h
 	<iostream>
 	<iomanip>
 	<limits>
@@ -69,10 +70,15 @@
 	<iostream>
 	<limits>
 
-1355408550 c:\source\cppreference\algorithms\sort\insertion.hpp
+1355409856 c:\source\cppreference\algorithms\sort\insertion.hpp
 	<iostream>
 	<iomanip>
 	"../../Utility.h"
 
 1354451719 c:\source\cppreference\\utility.h
+
+1355415162 c:\source\cppreference\algorithms\sort\bubble.h
+	<iostream>
+	<iomanip>
+	"../../Utility.h"
 

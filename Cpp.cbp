@@ -16,12 +16,11 @@
 					<Add option="-Wunreachable-code" />
 					<Add option="-Wmissing-include-dirs" />
 					<Add option="-Weffc++" />
+					<Add option="-pedantic" />
 					<Add option="-std=c++0x" />
-					<Add option="-Wfatal-errors" />
-					<Add option="-Wextra" />
-					<Add option="-Wall" />
+					<Add option="-ansi" />
 					<Add option="-pg" />
-					<Add option="-g" />
+					<Add option="-W -Wall -ggdb" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg -lgmon" />
@@ -45,6 +44,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Algorithms\algo.h" />
+		<Unit filename="Algorithms\sort\bubble.h" />
 		<Unit filename="Algorithms\sort\insertion.hpp" />
 		<Unit filename="Algorithms\sort\selection.h" />
 		<Unit filename="Utility.cpp" />

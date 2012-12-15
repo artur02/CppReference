@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Algorithms\algo.h" open="1" top="1" tabpos="3">
-		<Cursor position="102" topLine="0" />
+	<File name="Algorithms\algo.h" open="1" top="0" tabpos="3">
+		<Cursor position="267" topLine="0" />
 	</File>
-	<File name="Algorithms\sort\insertion.hpp" open="1" top="0" tabpos="1">
-		<Cursor position="160" topLine="0" />
+	<File name="Algorithms\sort\bubble.h" open="1" top="0" tabpos="1">
+		<Cursor position="863" topLine="22" />
 	</File>
-	<File name="Algorithms\sort\selection.h" open="1" top="0" tabpos="2">
-		<Cursor position="164" topLine="0" />
+	<File name="Algorithms\sort\insertion.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="885" topLine="0" />
 	</File>
-	<File name="Utility.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="579" topLine="9" />
+	<File name="Algorithms\sort\selection.h" open="1" top="0" tabpos="4">
+		<Cursor position="219" topLine="0" />
+	</File>
+	<File name="Utility.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="41" topLine="1" />
 	</File>
 	<File name="Utility.h" open="0" top="0" tabpos="0">
 		<Cursor position="147" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="425" topLine="11" />
+	<File name="main.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="967" topLine="35" />
 	</File>
 </CodeBlocks_layout_file>
