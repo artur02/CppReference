@@ -36,7 +36,7 @@ void Algo<T>::Dump()
 template <typename T>
 int Algo<T>::FindMin(int start, int end)
 {
-    int min_index = -1;
+    int min_index = start;
 
     for(int i = start; i<end; i++)
     {
